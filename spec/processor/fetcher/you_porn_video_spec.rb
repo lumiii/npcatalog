@@ -2,16 +2,15 @@ require 'rails_helper'
 
 describe Fetcher::YouPornVideo do
   describe 'correct URL' do
-    let(:url) { 'http://www.youporn.com/watch/10460677/girlfriend-facial-in-public-bathroom/' }
-
+    let(:url) { 'http://www.youporn.com/watch/21437/titty-fuck-4/' }
     it 'matches the url' do
       expect(Fetcher::YouPornVideo.match?(url)).to be(true)
     end
 
     it 'loads the right data' do
       video_data = Fetcher::YouPornVideo.load(url)
-      expect(video_data.url).to eq(url)
-      expect(video_data.title).to eq('Girlfriend Facial in Public Bathroom')
+      expect(video_data.url).to eq("https://www.youporn.com/watch/21437/titty-fuck-4/")
+      expect(video_data.title).to eq('Titty Fuck 4')
     end
   end
 

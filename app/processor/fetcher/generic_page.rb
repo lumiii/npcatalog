@@ -6,6 +6,14 @@ class Fetcher::GenericPage < Fetcher::Base
   end
 
   private
+
+  def self.data
+    Fetcher::VideoData.new(
+        url: Capybara.page.current_url,
+        title: title
+    )
+  end
+
   def self.title
     Capybara.page.title
   end

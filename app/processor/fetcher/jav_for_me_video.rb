@@ -1,4 +1,5 @@
 class Fetcher::JavForMeVideo < Fetcher::Base
+  include Fetcher::NormalVideoData
   @@regexp = /.*javfor\.me\/\d*.html/
 
   def self.match?(url)
@@ -7,6 +8,6 @@ class Fetcher::JavForMeVideo < Fetcher::Base
 
   private
   def self.title
-    Capybara.page.find('div.post > h2').text
+    text_from_selector('div.post > h2')
   end
 end

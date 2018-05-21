@@ -1,4 +1,5 @@
 class Fetcher::XVideosVideo < Fetcher::Base
+  include Fetcher::DeletableVideoData
   @@regexp = /.*xvideos\.com\/video(\d)*\/.*/
 
   def self.match?(url)
@@ -7,6 +8,11 @@ class Fetcher::XVideosVideo < Fetcher::Base
 
   private
   def self.title
-    Capybara.page.find('h2.page-title').text
+    text_from_selector('h2.page-title')
+  end
+
+  def self.deleted
+    deleted_from_selector('h1.text-danger',
+                          'Sorry, this video has been deleted')
   end
 end

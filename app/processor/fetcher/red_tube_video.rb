@@ -1,4 +1,5 @@
 class Fetcher::RedTubeVideo < Fetcher::Base
+  include Fetcher::NormalVideoData
   @@regexp = /.*redtube\.com\/\d*/
 
   def self.match?(url)
@@ -7,6 +8,6 @@ class Fetcher::RedTubeVideo < Fetcher::Base
 
   private
   def self.title
-    Capybara.page.find('h1.video_title_text').text
+    text_from_selector('h1.video_title_text')
   end
 end

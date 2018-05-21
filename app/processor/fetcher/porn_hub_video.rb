@@ -1,5 +1,5 @@
 class Fetcher::PornHubVideo < Fetcher::Base
-  include Poltergeist
+  include Fetcher::DeletableVideoData
 
   @@regexp = /.*pornhub\.com\/view_video\.php\?viewkey=.*/
 
@@ -9,7 +9,7 @@ class Fetcher::PornHubVideo < Fetcher::Base
 
   private
   def self.title
-    Capybara.page.find('h1.title').text
+    text_from_selector('h1.title')
   end
 
   def self.sanitize_url(url)
@@ -18,5 +18,10 @@ class Fetcher::PornHubVideo < Fetcher::Base
     sanitized_params = {'viewkey' => original_params['viewkey']}
     uri.query = URI.encode_www_form(sanitized_params)
     uri.to_s
+  end
+
+  def self.deleted
+    deleted_from_selector('.removed .video-notice',
+                          'Video has been removed at the request of the copyright owner.')
   end
 end

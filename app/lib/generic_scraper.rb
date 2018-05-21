@@ -1,5 +1,4 @@
 class GenericScraper
-  include Poltergeist
 
   GenericData = Struct.new(:url, :title)
 
