@@ -47,7 +47,8 @@ class FileLoader
   end
 
   def self.load_url(url)
-    Fetcher::All.load(url.strip)
+  Fetcher.All.load(url.strip)
+
   rescue Fetcher::DeletedError
     nil
   end
