@@ -10,8 +10,16 @@ class Fetcher::MotherlessVideo < Fetcher::Base
   private
 
   def self.deleted
-    deleted_from_selector('.error-page .gold',
-                          "The upload you're looking for has been deleted for the following reason")
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: '.error-page .gold',
+            text: "The upload you're looking for has been deleted for the following reason"),
+        Fetcher::SelectorText.new(
+            selector: '.error-page h1',
+            text: "404 - Not Found")
+    ]
+
+    multiple_text_search(search_params)
   end
 
   def self.title

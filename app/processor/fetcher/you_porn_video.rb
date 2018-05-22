@@ -12,7 +12,14 @@ class Fetcher::YouPornVideo < Fetcher::Base
   end
 
   def self.deleted
-    deleted_from_selector('.video-not-found-header',
-                          'This video is no longer available due to a copyright claim.')
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: '.video-not-found-header',
+            text: 'This video is no longer available due to a copyright claim.')
+    ]
+
+    multiple_text_search(search_params)
+  rescue Capybara::ElementNotFound
+    Capybara.page.find('.box-404') != nil
   end
 end

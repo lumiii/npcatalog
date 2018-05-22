@@ -21,7 +21,21 @@ class Fetcher::PornHubVideo < Fetcher::Base
   end
 
   def self.deleted
-    deleted_from_selector('.removed .video-notice',
-                          'Video has been removed at the request of the copyright owner.')
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: '.removed .video-notice',
+            text: /Video has been removed at the request of.*/),
+        Fetcher::SelectorText.new(
+            selector: '.removed .video-notice',
+            text: 'This video was deleted by uploader'),
+        Fetcher::SelectorText.new(
+            selector: '.removed .video-notice',
+            text: 'This video has been disabled'),
+        Fetcher::SelectorText.new(
+            selector: 'h1 > span',
+            text: 'Error Page Not Found')
+    ]
+
+    multiple_text_search(search_params)
   end
 end

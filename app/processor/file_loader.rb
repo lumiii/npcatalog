@@ -2,17 +2,21 @@ class FileLoader
   def self.load_urls(file_path)
     output = []
     dead_links = []
+    resume_point = 0
 
-    File.open(file_path, 'r') do |read_file|
-      read_file.each_line do |line|
-        puts line
-        data = load_url(line)
+    lines = File.readlines(file_path)
+    lines.each_with_index do |line, index|
+      next if index < resume_point
 
-        if data != nil
-          output.push(data)
-        else
-          dead_links.push(line)
-        end
+      puts index.to_s + ' / ' + lines.size.to_s
+      puts line
+      data = load_url(line)
+
+      if data != nil
+        output.push(data)
+      else
+        puts 'Deleted'
+        dead_links.push(line)
       end
     end
 
@@ -28,15 +32,16 @@ class FileLoader
   def self.print_dead_links(dead_links)
     File.open('D:\\dead_links.txt', 'w') do |f|
       dead_links.each do |link|
-        f.write(link + '\r\n')
+        next if link.strip == ''
+        f.write(link + "\r\n")
       end
     end
   end
 
   def self.print_output(output)
-    File.open('D:\\test.txt', 'w') do |write_file|
+    File.open('D:\\test.txt', 'w') do |f|
       output.each do |video_data|
-        write_file.write(video_data.title + '\r\n' + video_data.url + '\r\n\r\n')
+        f.write(video_data.title + "\r\n" + video_data.url + "\r\n\r\n")
       end
     end
   end

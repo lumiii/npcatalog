@@ -12,6 +12,12 @@ class Fetcher::HomeMoviesTubeVideo < Fetcher::Base
   end
 
   def self.deleted
-    deleted_from_selector('h2', "Sorry, this page doesn't exist.")
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: 'h2',
+            text: "Sorry, this page doesn't exist.")
+    ]
+
+    multiple_text_search(search_params)
   end
 end

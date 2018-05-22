@@ -20,6 +20,14 @@ class Fetcher::XHamsterVideo < Fetcher::Base
   end
 
   def self.deleted
-    deleted_from_selector('error404-title', 'Video was deleted')
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: '.error404-title',
+            text: 'Video Was Deleted')
+    ]
+
+    multiple_text_search(search_params)
+  rescue Capybara::ElementNotFound
+    Capybara.page.find('.item-status.friends-only') != nil
   end
 end

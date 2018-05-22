@@ -12,7 +12,18 @@ class Fetcher::XVideosVideo < Fetcher::Base
   end
 
   def self.deleted
-    deleted_from_selector('h1.text-danger',
-                          'Sorry, this video has been deleted')
+    search_params = [
+        Fetcher::SelectorText.new(
+            selector: '#content h1',
+            text: 'Sorry but the page you requested was not found.'),
+        Fetcher::SelectorText.new(
+            selector: 'h1.text-danger',
+            text: 'Sorry, this video has been deleted')
+    ]
+
+    multiple_text_search(search_params)
+  rescue Capybara::ElementNotFound => e
+    raise e unless Capybara.page.current_url == 'https://www.xvideos.com/'
+    true
   end
 end
