@@ -1,0 +1,26 @@
+ <table>
+  <thead>
+  <tr>
+    <th>Site</th>
+    <th>Title</th>
+    <th colspan="4"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @favourites.each do |favourite| %>
+    <tr>
+      <td>
+        <a href="<%= favourite.uri %>", target="_blank">
+          <img src="<%= favourite.thumbnail_path %>" style="max-height:200px;max-width:200px;height:auto;width:auto;"/>
+        </a>
+      </td>
+      <td><%= favourite.title %></td>
+      <td><%= link_to 'Show', favourite, remote: true %></td>
+      <td><%= link_to 'Edit', edit_favourite_path(favourite), remote: true %></td>
+      <td><%= link_to 'Destroy', favourite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'VLC', play_favourite_path(favourite), method: :get, remote: true %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

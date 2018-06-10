@@ -1,5 +1,6 @@
 class Fetcher::MotherlessVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
 
   @@regexp = /.*motherless\.com\/.*/
 

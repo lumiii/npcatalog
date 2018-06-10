@@ -1,4 +1,4 @@
-module Fetcher::DeletableVideoData
+module Fetcher::Concern::DeletableVideoData
   extend ActiveSupport::Concern
 
   module ClassMethods
@@ -6,7 +6,8 @@ module Fetcher::DeletableVideoData
     def data
       Fetcher::VideoData.new(
           url: Capybara.page.current_url,
-          title: title
+          title: title,
+          thumbnail: thumbnail
       )
     rescue Capybara::ElementNotFound
       raise Fetcher::DeletedError.new if deleted

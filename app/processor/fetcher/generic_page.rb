@@ -1,4 +1,7 @@
 class Fetcher::GenericPage < Fetcher::Base
+  include Fetcher::Concern::NormalVideoData
+  include Fetcher::Concern::ScreenshotThumbnail
+
   @@regexp = URI.regexp
 
   def self.match?(url)
@@ -6,14 +9,6 @@ class Fetcher::GenericPage < Fetcher::Base
   end
 
   private
-
-  def self.data
-    Fetcher::VideoData.new(
-        url: Capybara.page.current_url,
-        title: title
-    )
-  end
-
   def self.title
     Capybara.page.title
   end

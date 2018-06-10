@@ -13,6 +13,6 @@ module Fetcher
     end
   end
 
-  VideoData = Struct.new(:url, :title, keyword_init: true)
+  VideoData = Struct.new(:url, :title, :thumbnail, keyword_init: true)
   SelectorText = Struct.new(:selector, :text, keyword_init: true)
 end

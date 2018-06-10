@@ -1,5 +1,5 @@
 class FavouritesController < ApplicationController
-  before_action :set_favourite, only: [:show, :edit, :update, :destroy]
+  before_action :set_favourite, only: [:show, :edit, :update, :destroy, :play]
 
   # GET /favourites
   # GET /favourites.json
@@ -29,10 +29,8 @@ class FavouritesController < ApplicationController
     respond_to do |format|
       if @favourite.save
         format.html { redirect_to @favourite, notice: 'Favourite was successfully created.' }
-        format.json { render :show, status: :created, location: @favourite }
       else
         format.html { render :new }
-        format.json { render json: @favourite.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -43,10 +41,8 @@ class FavouritesController < ApplicationController
     respond_to do |format|
       if @favourite.update(favourite_params)
         format.html { redirect_to @favourite, notice: 'Favourite was successfully updated.' }
-        format.json { render :show, status: :ok, location: @favourite }
       else
         format.html { render :edit }
-        format.json { render json: @favourite.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -57,7 +53,25 @@ class FavouritesController < ApplicationController
     @favourite.destroy
     respond_to do |format|
       format.html { redirect_to favourites_url, notice: 'Favourite was successfully destroyed.' }
-      format.json { head :no_content }
+    end
+  end
+
+  def play
+    system('D:/vlc/vlc.exe file:///D:/b.mp4')
+
+    respond_to do |format|
+      format.html { redirect_to favourites_url }
+    end
+  end
+
+  def list
+    @favourites = Favourite.all
+    render :partial => "list"
+  end
+
+  def reload_table
+    respond_to do |format|
+      format.js
     end
   end
 

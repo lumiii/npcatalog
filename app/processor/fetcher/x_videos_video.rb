@@ -1,5 +1,7 @@
 class Fetcher::XVideosVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
+
   @@regexp = /.*xvideos\.com\/video(\d)*\/.*/
 
   def self.match?(url)

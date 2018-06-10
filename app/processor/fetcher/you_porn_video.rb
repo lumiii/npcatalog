@@ -1,5 +1,7 @@
 class Fetcher::YouPornVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
+
   @@regexp = /.*youporn\.com\/watch\/\d*.*/
 
   def self.match?(url)

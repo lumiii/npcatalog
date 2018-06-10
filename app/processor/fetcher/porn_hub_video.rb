@@ -1,5 +1,6 @@
 class Fetcher::PornHubVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
 
   @@regexp = /.*pornhub\.com\/view_video\.php\?viewkey=.*/
 

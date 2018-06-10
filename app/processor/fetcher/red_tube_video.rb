@@ -1,5 +1,7 @@
 class Fetcher::RedTubeVideo < Fetcher::Base
-  include Fetcher::NormalVideoData
+  include Fetcher::Concern::NormalVideoData
+  include Fetcher::Concern::OGImageThumbnail
+
   @@regexp = /.*redtube\.com\/\d*/
 
   def self.match?(url)

@@ -1,4 +1,4 @@
-module Fetcher::NormalVideoData
+module Fetcher::Concern::NormalVideoData
   extend ActiveSupport::Concern
 
   module ClassMethods
@@ -6,7 +6,8 @@ module Fetcher::NormalVideoData
     def data
       Fetcher::VideoData.new(
           url: Capybara.page.current_url,
-          title: title
+          title: title,
+          thumbnail: thumbnail
       )
     end
   end

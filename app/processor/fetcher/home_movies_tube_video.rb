@@ -1,5 +1,7 @@
 class Fetcher::HomeMoviesTubeVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
+
   @@regexp = /.*homemoviestube\.com\/videos\/\d*\/.*/
 
   def self.match?(url)
@@ -19,5 +21,20 @@ class Fetcher::HomeMoviesTubeVideo < Fetcher::Base
     ]
 
     multiple_text_search(search_params)
+  end
+
+  def self.thumbnail_url
+    url = Capybara.page.find('meta[property="og:image"]', visible: false)['content']
+    return url if Fetcher::HomeMoviesTubeVideo.valid_url(url)
+
+    url['b.jpg'] = '.jpg'
+    return url if Fetcher::HomeMoviesTubeVideo.valid_url(url)
+
+    nil
+  end
+
+  def self.valid_url(url)
+    response = HTTParty.get(url)
+    response.code == 200
   end
 end

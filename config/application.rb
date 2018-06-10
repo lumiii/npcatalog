@@ -14,5 +14,16 @@ module Npcatalog
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.media_path = 'D:/Downloads/npcatalog'
+    # config.text_file_path = 'C:/Users/Vincent/OneDrive/links.txt'
+    config.text_file_path = 'D:/Downloads/npcatalog/dump.txt'
+
+    config.serve_static_files = true
+    paths['public'] = config.media_path
+
+    # middleware.use ::ActionDispatch::Static,
+    #                config.media_path,
+    #                index: 'index'
   end
 end

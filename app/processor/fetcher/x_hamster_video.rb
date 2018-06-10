@@ -1,5 +1,7 @@
 class Fetcher::XHamsterVideo < Fetcher::Base
-  include Fetcher::DeletableVideoData
+  include Fetcher::Concern::DeletableVideoData
+  include Fetcher::Concern::OGImageThumbnail
+
   @@regexp = /.*xhamster\.com\/(videos|movies)\/.*/
 
   def self.match?(url)

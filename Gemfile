@@ -20,7 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -31,14 +31,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'activesupport'
 gem 'acts-as-taggable-on'
 gem 'capybara'
 # gem 'capybara-webkit'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+gem 'filterrific'
+gem 'httparty'
+gem 'jquery-rails'
 gem 'pg'
 gem 'pg_search'
+gem 'render_async'
 gem 'poltergeist'
+gem 'tabulous'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
