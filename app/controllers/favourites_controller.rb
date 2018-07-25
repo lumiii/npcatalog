@@ -30,11 +30,11 @@ class FavouritesController < ApplicationController
     links.each do |link|
       video_datas = []
 
-      Capybara.using_session(link) do
-        video_data = Fetcher::All::load(link)
-        raise "Nil Video Link #{link}" if video_data.nil?
-        video_datas.push(video_data)
-      end
+
+      video_data = Fetcher::All::load(link)
+      raise "Nil Video Link #{link}" if video_data.nil?
+      video_datas.push(video_data)
+
 
       video_datas.each do |video_data|
         Favourite.create_from_video_data(video_data)

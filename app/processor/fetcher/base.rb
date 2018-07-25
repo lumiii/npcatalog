@@ -2,6 +2,8 @@ module Fetcher
   class Base
     def self.load(url)
       throw Fetcher::WrongFetcherError unless match?(url)
+      Capybara.reset!
+
       url = sanitize_url(url)
       uri = URI.parse(url)
       Capybara.configure do |config|
@@ -10,7 +12,6 @@ module Fetcher
         config.app_host = "#{uri.scheme}://#{uri.host}"
       end
 
-      Capybara.reset!
       Capybara.visit(url)
       data
     end
