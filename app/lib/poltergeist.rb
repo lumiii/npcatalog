@@ -1,12 +1,20 @@
-require 'capybara/poltergeist'
+require 'capybara/selenium/driver'
 require 'capybara/rails'
+require 'selenium/webdriver'
 
 module Poltergeist
   include Capybara::DSL
 
-  Capybara.current_driver = :poltergeist
-  Capybara.javascript_driver = :poltergeist
-  Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(app, js_errors: false, timeout: 180, logger: nil)
+  Capybara.register_driver :selenium_chrome_headless do |app|
+    browser_options = ::Selenium::WebDriver::Chrome::Options.new
+    browser_options.args << '--headless'
+    browser_options.args << '--disable-gpu'
+    Capybara::Selenium::Driver.new(app, browser: :chrome, options: browser_options)
   end
+
+  Capybara.javascript_driver = :selenium_chrome_headless
+  Capybara.run_server = false
+  Capybara.default_driver = :selenium_chrome_headless
+  Capybara.threadsafe = true
+  Capybara.default_max_wait_time = 180
 end

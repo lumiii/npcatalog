@@ -18,7 +18,9 @@ class Fetcher::All
 
       3.times do
         return fetcher.load(url)
-      rescue Capybara::Poltergeist::StatusFailError
+      # rescue Capybara::Poltergeist::StatusFailError
+      rescue StandardError => e
+          puts e
       end
     end
 

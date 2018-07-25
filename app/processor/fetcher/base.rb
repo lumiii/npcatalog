@@ -3,6 +3,13 @@ module Fetcher
     def self.load(url)
       throw Fetcher::WrongFetcherError unless match?(url)
       url = sanitize_url(url)
+      uri = URI.parse(url)
+      Capybara.configure do |config|
+        config.run_server = false
+        config.default_driver = :selenium_chrome_headless
+        config.app_host = "#{uri.scheme}://#{uri.host}"
+      end
+
       Capybara.reset!
       Capybara.visit(url)
       data
@@ -14,7 +21,9 @@ module Fetcher
     end
 
     def self.text_from_selector(selector)
-      Capybara.page.find(selector, wait:20).text
+      page = Capybara.page
+      elem = page.find(selector, wait:20)
+      elem.text
     end
   end
 end

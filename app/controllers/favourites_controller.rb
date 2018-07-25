@@ -24,14 +24,25 @@ class FavouritesController < ApplicationController
   # POST /favourites
   # POST /favourites.json
   def create
-    @favourite = Favourite.new(favourite_params)
+    input = params[:links]
+    links = input.split("\r\n")
+
+    links.each do |link|
+      video_datas = []
+
+      Capybara.using_session(link) do
+        video_data = Fetcher::All::load(link)
+        raise "Nil Video Link #{link}" if video_data.nil?
+        video_datas.push(video_data)
+      end
+
+      video_datas.each do |video_data|
+        Favourite.create_from_video_data(video_data)
+      end
+    end
 
     respond_to do |format|
-      if @favourite.save
-        format.html { redirect_to @favourite, notice: 'Favourite was successfully created.' }
-      else
-        format.html { render :new }
-      end
+      format.html { redirect_to favourites_url, notice: 'Favourites have been added.'  }
     end
   end
 

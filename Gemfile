@@ -43,7 +43,8 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'pg_search'
 gem 'render_async'
-gem 'poltergeist'
+# gem 'poltergeist'
+gem 'selenium-webdriver'
 gem 'tabulous'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
@@ -51,7 +52,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'selenium-webdriver'
+
   gem 'rspec-rails'
 end
 
