@@ -1,10 +1,10 @@
 class FavouritesController < ApplicationController
-  before_action :set_favourite, only: [:show, :edit, :update, :destroy, :play]
+  before_action :set_favourite, only: [:show, :edit, :update, :destroy, :play, :increment_likes]
 
   # GET /favourites
   # GET /favourites.json
   def index
-    @favourites = Favourite.all
+    @favourites = sort(Favourite.all)
   end
 
   # GET /favourites/1
@@ -75,6 +75,10 @@ class FavouritesController < ApplicationController
     end
   end
 
+  def random
+    @favourites = Favourite.all.shuffle
+  end
+
   def list
     @favourites = Favourite.all
     render :partial => "list"
@@ -86,7 +90,20 @@ class FavouritesController < ApplicationController
     end
   end
 
+  def increment_likes
+    @favourite.increment_likes
+    @favourite.reload
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
   private
+    def sort(favourites)
+      favourites.order(likes: :desc, updated_at: :desc)
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_favourite
       @favourite = Favourite.find(params[:id])

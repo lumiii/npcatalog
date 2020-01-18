@@ -4,7 +4,8 @@ class Favourite < ApplicationRecord
 
     favourite = Favourite.new(
       uri: video_data.url,
-      title: video_data.title
+      title: video_data.title,
+      likes: 1,
     )
 
     favourite.id = id unless id.nil?
@@ -35,6 +36,11 @@ class Favourite < ApplicationRecord
   def destroy
     delete_folder
     super
+  end
+
+  def increment_likes
+    new_likes = likes + 1
+    update!(likes: new_likes)
   end
 
   private

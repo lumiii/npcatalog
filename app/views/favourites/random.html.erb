@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+<%= link_to 'Favourites', reload_table_favourites_url, remote: true %>
+</h1>
+
+<div id="main">
+<%= render "favourites/random" %>
+</div>

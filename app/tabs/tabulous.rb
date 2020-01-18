@@ -9,6 +9,14 @@ Tabulous.setup do
       active_when   { in_action('index').of_controller('favourites') }
     end
 
+    random_tab do
+      text          { 'Random' }
+      link_path     { random_favourites_path }
+      visible_when  { true }
+      enabled_when  { true }
+      active_when   { in_action('random').of_controller('favourites') }
+    end
+
     new_link_tab do
       text          { 'New Link' }
       link_path     { new_favourite_path }
