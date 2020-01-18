@@ -77,6 +77,7 @@ class FavouritesController < ApplicationController
 
   def random
     @favourites = Favourite.all.shuffle
+    render "random"
   end
 
   def list
