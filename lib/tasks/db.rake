@@ -8,7 +8,15 @@ namespace :db do
       cmd = "pg_dump --file=#{Rails.root}/db/#{app}.dump --host=#{host} --username=#{user} --verbose --clean --no-owner --no-acl --format=c #{db}"
     end
     puts cmd
-    exec cmd
+    system cmd
+
+    cmd = '"C:\Program Files\WinRAR\Rar.exe" d thumbnails.zip'
+    puts cmd
+    system cmd
+
+    cmd = '"C:\Program Files\WinRAR\Rar.exe" a thumbnails.zip D:\Downloads\npcatalog'
+    puts cmd
+    system cmd
   end
 
   desc "Restores the database dump at db/APP_NAME.dump."
@@ -20,7 +28,7 @@ namespace :db do
     Rake::Task["db:drop"].invoke
     Rake::Task["db:create"].invoke
     puts cmd
-    exec cmd
+    system cmd
   end
 
   private
