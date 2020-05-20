@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b6f7182-8df9-4515-832e-80a6575c87ba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/lib/tasks/db22.rake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/favourites/increment_likes.js.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/lib/wrapped_finder.rb" />
+      <change beforePath="$PROJECT_DIR$/.idea/npcatalog.iml" afterPath="$PROJECT_DIR$/.idea/npcatalog.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/favourites_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/favourites_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/favourite.rb" afterPath="$PROJECT_DIR$/app/models/favourite.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/favourites/_list.html.erb" afterPath="$PROJECT_DIR$/app/views/favourites/_list.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/base.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/base.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb" />
+      <change beforePath="$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb" afterPath="$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb" />
+      <change beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -31,101 +34,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="favourites_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/favourites_controller.rb">
+      <file leaf-file-name="base.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/base.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="422">
+              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_list.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/favourites/_list.html.erb">
+      <file leaf-file-name="deletable_video_data.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reload_table.js.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/favourites/reload_table.js.erb">
+      <file leaf-file-name="you_porn_video.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="increment_likes.js.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/favourites/increment_likes.js.erb">
+      <file leaf-file-name="og_image_thumbnail.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+            <state relative-caret-position="225">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <file leaf-file-name="home_movies_tube_video.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20180725082346_add_likes_to_favourites.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180725082346_add_likes_to_favourites.rb">
+      <file leaf-file-name="jav_for_me_video.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="75" lean-forward="false" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+            <state relative-caret-position="300">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="finders.rb" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.32.2/lib/capybara/node/finders.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favourite.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/favourite.rb">
+      <file leaf-file-name="browser.rb" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.32.2/lib/capybara/rack_test/browser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="501">
+              <caret line="103" column="6" lean-forward="false" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wrapped_finder.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/wrapped_finder.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="x_hamster_video.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -159,10 +162,13 @@
       <find>create</find>
       <find>puma</find>
       <find>webri</find>
+      <find>.find</find>
+      <find>WrappedFinder</find>
+      <find>page.find</find>
     </findStrings>
     <dirStrings>
-      <dir>D:\Rails\project\npcatalog</dir>
       <dir>D:\Rails\project\npcatalog\app</dir>
+      <dir>D:\Rails\project\npcatalog</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -175,14 +181,9 @@
         <option value="$PROJECT_DIR$/app/processor/file_loader.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/concern/normal_video_data.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/concern/thumbnail_url.rb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/motherless_video.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/red_tube_video.rb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/x_videos_video.rb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/concern/screenshot_thumbnail.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/generic_page.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/porn_hub_playlist.rb" />
@@ -199,7 +200,6 @@
         <option value="$PROJECT_DIR$/app/jobs/file_load_job.rb" />
         <option value="$PROJECT_DIR$/app/commands/load_links_file.rb" />
         <option value="$PROJECT_DIR$/app/views/favourites/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb" />
         <option value="$PROJECT_DIR$/app/processor/fetcher/all.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/puma.rb" />
@@ -208,7 +208,6 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/lib/poltergeist.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/processor/fetcher/base.rb" />
         <option value="$PROJECT_DIR$/app/lib/tasks/db.rake" />
         <option value="$PROJECT_DIR$/lib/tasks/db.rake" />
         <option value="$PROJECT_DIR$/db/migrate/20180725082346_add_likes_to_favourites.rb" />
@@ -217,6 +216,14 @@
         <option value="$PROJECT_DIR$/app/views/favourites/increment_likes.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/favourites_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/favourite.rb" />
+        <option value="$PROJECT_DIR$/app/lib/wrapped_finder.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/base.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb" />
+        <option value="$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb" />
       </list>
     </option>
   </component>
@@ -233,7 +240,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="655" />
     <option name="y" value="61" />
     <option name="width" value="1400" />
@@ -270,21 +277,14 @@
               <item name="npcatalog" type="b2602c69:ProjectViewProjectNode" />
               <item name="npcatalog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="npcatalog" type="b2602c69:ProjectViewProjectNode" />
               <item name="npcatalog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="favourites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="npcatalog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="npcatalog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="fetcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="npcatalog" type="b2602c69:ProjectViewProjectNode" />
@@ -341,7 +341,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;favourit&#9;null&#9;null&#10;favour&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/models/favourite.rb&#10;mig&#9;FILE&#9;file://D:/Rails/project/npcatalog/db/migrate&#10;base.r&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/base.rb&#10;fav&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/controllers/favourites_controller.rb&#10;gemf&#9;FILE&#9;file://D:/Rails/project/npcatalog/Gemfile&#10;polter&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/lib/poltergeist.rb&#10;favou&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/controllers/favourites_controller.rb&#10;base.&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/base.rb&#10;capybara.&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.4.1/lib/capybara.rb&#10;pol&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/lib/poltergeist.rb&#10;puma.rb&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/puma.rb&#10;puma&#9;null&#9;null&#10;application&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/application.rb&#10;save&#9;null&#9;null&#10;config&#9;FILE&#9;file://D:/Rails/project/npcatalog/config&#10;Load&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/commands/load_links_file.rb&#10;homem&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/home_movies_tube_video.rb&#10;routes.&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;ge&#9;FILE&#9;file://D:/Rails/project/npcatalog/Gemfile&#10;appli&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/assets/javascripts/application.js&#10;rou&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;r&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/tabulous-2.1.4/lib/tabulous/dsl/tab.rb&#10;application.js&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/assets/javascripts/application.js&#10;tab&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/tabs/tabulous.rb&#10;index&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/views/favourites/index.html.erb&#10;action_cac&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/ajaxify_rails-0.9.7/lib/ajaxify_rails/action_caching_patch.rb&#10;routes.rb&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;asset_tag&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/actionview-5.1.6/lib/action_view/helpers/asset_tag_helper.rb&#10;environment&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/environment.rb&#10;application.rb&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/application.rb&#10;videodata&#9;null&#9;null&#10;file&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/jobs/file_load_job.rb&#10;File&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/file_loader.rb&#10;homemov&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/home_movies_tube_video.rb&#10;file_loader&#9;FILE&#9;file://D:/Rails/project/npcatalog/spec/processor/file_loader_spec.rb&#10;fetcher&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher.rb" />
+    <property name="SearchEverywhereHistoryKey" value="og_&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/concern/og_image_thumbnail.rb&#10;routes&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;favourit&#9;null&#9;null&#10;favour&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/models/favourite.rb&#10;mig&#9;FILE&#9;file://D:/Rails/project/npcatalog/db/migrate&#10;base.r&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/base.rb&#10;fav&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/controllers/favourites_controller.rb&#10;gemf&#9;FILE&#9;file://D:/Rails/project/npcatalog/Gemfile&#10;polter&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/lib/poltergeist.rb&#10;favou&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/controllers/favourites_controller.rb&#10;base.&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/base.rb&#10;capybara.&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.4.1/lib/capybara.rb&#10;pol&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/lib/poltergeist.rb&#10;puma.rb&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/puma.rb&#10;puma&#9;null&#9;null&#10;application&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/application.rb&#10;save&#9;null&#9;null&#10;config&#9;FILE&#9;file://D:/Rails/project/npcatalog/config&#10;Load&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/commands/load_links_file.rb&#10;homem&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/home_movies_tube_video.rb&#10;routes.&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;ge&#9;FILE&#9;file://D:/Rails/project/npcatalog/Gemfile&#10;appli&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/assets/javascripts/application.js&#10;rou&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;r&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/tabulous-2.1.4/lib/tabulous/dsl/tab.rb&#10;application.js&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/assets/javascripts/application.js&#10;tab&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/tabs/tabulous.rb&#10;index&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/views/favourites/index.html.erb&#10;action_cac&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/ajaxify_rails-0.9.7/lib/ajaxify_rails/action_caching_patch.rb&#10;routes.rb&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/routes.rb&#10;asset_tag&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/actionview-5.1.6/lib/action_view/helpers/asset_tag_helper.rb&#10;environment&#9;FILE&#9;file://D:/Rails/project/npcatalog/config/environment.rb&#10;application.rb&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/application.rb&#10;videodata&#9;null&#9;null&#10;file&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/jobs/file_load_job.rb&#10;File&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/file_loader.rb&#10;homemov&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher/home_movies_tube_video.rb&#10;file_loader&#9;FILE&#9;file://D:/Rails/project/npcatalog/spec/processor/file_loader_spec.rb&#10;fetcher&#9;FILE&#9;file://D:/Rails/project/npcatalog/app/processor/fetcher.rb" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -535,6 +535,7 @@
       <workItem from="1532319284204" duration="8599000" />
       <workItem from="1532411373113" duration="19446000" />
       <workItem from="1532491801403" duration="12838000" />
+      <workItem from="1589969605277" duration="1457000" />
     </task>
     <servers />
   </component>
@@ -571,16 +572,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133981000" />
+    <option name="totallyTimeSpent" value="135438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35274357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -592,7 +595,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -649,60 +651,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/win32-process-0.8.3/lib/win32/process.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2886">
-          <caret line="390" column="20" lean-forward="false" selection-start-line="390" selection-start-column="14" selection-end-line="390" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1775">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.4.1/lib/capybara/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1350">
-          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.4.1/lib/capybara/session.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="153" column="6" lean-forward="false" selection-start-line="153" selection-start-column="6" selection-end-line="153" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,18 +690,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/jobs/save_link_job.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jobs/save_link_job.rb" />
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -764,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,27 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/processor/fetcher/motherless_video.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,23 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,15 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="9" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="7" column="83" lean-forward="false" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1003,7 +897,7 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1034,16 +928,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/favourites_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="975">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/favourite.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="150">
           <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/generic_scraper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/file_downloader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.32.2/lib/capybara/rack_test/browser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="103" column="6" lean-forward="false" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/capybara-3.32.2/lib/capybara/node/finders.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/concern/og_image_thumbnail.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/jav_for_me_video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/home_movies_tube_video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/concern/deletable_video_data.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/you_porn_video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/wrapped_finder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/processor/fetcher/x_hamster_video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>
