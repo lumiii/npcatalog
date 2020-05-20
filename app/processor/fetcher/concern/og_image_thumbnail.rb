@@ -6,7 +6,7 @@ module Fetcher::Concern::OGImageThumbnail
   module ClassMethods
     private
     def thumbnail_url
-      Capybara.page.find('meta[property="og:image"]', visible: false)['content']
+      Capybara.page.find('meta[property="og:image"]', visible: false, match: :first)['content']
     end
   end
 end
