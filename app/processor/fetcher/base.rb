@@ -22,8 +22,7 @@ module Fetcher
     end
 
     def self.text_from_selector(selector)
-      page = Capybara.page
-      elem = page.find(selector, wait:20)
+      elem = WrappedFinder.find(Capybara.page, selector, wait:20)
       elem.text
     end
   end

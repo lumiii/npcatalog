@@ -10,7 +10,7 @@ class Fetcher::JavForMeVideo < Fetcher::Base
 
   private
   def self.thumbnail_url
-    Capybara.page.find('#my_main_content_box img')['src']
+    WrappedFinder.find(Capybara.page, '#my_main_content_box img')['src']
   end
 
   def self.title

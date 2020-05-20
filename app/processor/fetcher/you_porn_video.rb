@@ -22,6 +22,6 @@ class Fetcher::YouPornVideo < Fetcher::Base
 
     multiple_text_search(search_params)
   rescue Capybara::ElementNotFound
-    Capybara.page.find('.box-404') != nil
+    WrappedFinder.find(Capybara.page ,'.box-404') != nil
   end
 end

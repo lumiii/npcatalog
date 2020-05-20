@@ -24,7 +24,7 @@ class Fetcher::HomeMoviesTubeVideo < Fetcher::Base
   end
 
   def self.thumbnail_url
-    url = Capybara.page.find('meta[property="og:image"]', visible: false)['content']
+    url = WrappedFinder.find(Capybara.page, 'meta[property="og:image"]', visible: false)['content']
     return url if Fetcher::HomeMoviesTubeVideo.valid_url(url)
 
     url['b.jpg'] = '.jpg'

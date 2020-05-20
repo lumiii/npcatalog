@@ -10,7 +10,7 @@ class Fetcher::XHamsterVideo < Fetcher::Base
 
   private
   def self.title
-    text_from_selector('h1.entity-info-container__title')
+    text_from_selector('h1')
   end
 
   def self.sanitize_url(url)
@@ -30,6 +30,6 @@ class Fetcher::XHamsterVideo < Fetcher::Base
 
     multiple_text_search(search_params)
   rescue Capybara::ElementNotFound
-    Capybara.page.find('.item-status.friends-only') != nil
+    WrappedFinder.find(Capybara.page, '.item-status.friends-only') != nil
   end
 end
